@@ -1,0 +1,160 @@
+/* || COLORS */
+
+:root {
+  --dark: #1f2937;
+  --mid: gray;
+  --light: #e5e7eb;
+  --white: #f9faf8;
+  --accent: #3882f6;
+}
+
+/* || GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.primary-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secondary-width-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 32px;
+  margin: 16px 0;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* || NAV */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+nav ul {
+  display: flex;
+  gap: 24px;
+  list-style-type: none;
+}
+
+/* || HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 160px 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--accent);
+  padding: 16px 32px;
+  border-radius: 8px;
+  color: var(--light);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--light);
+  color: var(--accent);
+}
+
+/* || INFO */
+
+.info {
+  text-align: center;
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 80px;
+}
+
+.info-flex-container {
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+figcaption {
+  color: var(--mid);
+}
+
+/* || TESTIMONIAL */
+
+.testimonial {
+  background-color: var(--light);
+  padding: 80px;
+  color: var(--dark);
+}
+
+blockquote {
+  font-size: 32px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* || CTA */
+
+.cta {
+  padding: 80px;
+}
+
+/* || FOOTER */
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
