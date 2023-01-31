@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--dark);
@@ -95,6 +99,7 @@ nav {
 
 nav ul {
   display: flex;
+  align-items: center;
   gap: 24px;
   list-style-type: none;
 }
@@ -109,6 +114,10 @@ header {
   padding: 160px 16px;
 }
 
+header img {
+  width: 50%;
+}
+
 /* || INFO */
 
 .info {
@@ -120,7 +129,7 @@ header {
 
 .info-flex-container {
   display: flex;
-  gap: 40px;
+  gap: 24px;
   margin-top: 80px;
 }
 
@@ -137,9 +146,9 @@ figcaption p {
   margin: 8px 0 0 0;
 }
 
-/* || TESTIMONIAL */
+/* || TESTIMONIALS */
 
-.testimonial {
+.testimonials {
   background-color: var(--light);
   padding: 80px 16px;
   color: var(--dark);
@@ -195,4 +204,52 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+/* || RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  header img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    padding-bottom: 24px;
+  }
+
+  header {
+    display: block;
+    position: relative;
+    text-align: center;
+  }
+
+  header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    z-index: -5;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .info-flex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .cta-flex-container {
+    display: block;
+    text-align: center;
+  }
+
+  .cta p {
+    margin: 16px 0;
+  }
 }
